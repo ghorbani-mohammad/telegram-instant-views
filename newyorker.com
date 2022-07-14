@@ -1,7 +1,9 @@
 ~version: "2.1"
 
-$title: //h1[@data-testid="ContentHeaderHed"]
-title: $title
+@remove: //figure[starts-with(@class,"styles-module--picture")]
 
-$body: //div[@class="body__inner-container"]
-body: $body
+title: //h1[@data-testid="ContentHeaderHed"]
+title: //h1[starts-with(@class,"styles-module--hed")]
+
+body: //div[@class="body__inner-container"]
+body: //div[starts-with(@class, "styles-module--section")]
